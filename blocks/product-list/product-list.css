@@ -1,7 +1,7 @@
 .product-list ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 16px 0;
 }
 
 .product-list ul li {
@@ -17,5 +17,39 @@
 }
 
 .product-list ul li strong {
+  color: #333;
+}
+
+/* Pagination */
+.product-list .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.product-list .pagination button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.product-list .pagination button:hover:not(:disabled) {
+  background: #0066cc;
+  color: #fff;
+  border-color: #0066cc;
+}
+
+.product-list .pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.product-list .pagination span {
+  font-size: 14px;
   color: #333;
 }
