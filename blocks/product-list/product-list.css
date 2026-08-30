@@ -1,7 +1,7 @@
 .product-list ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 16px 0;
+  margin: 0 0 16px;
 }
 
 .product-list ul li {
@@ -38,15 +38,15 @@
   font-size: 14px;
 }
 
-.product-list .pagination button:hover:not(:disabled) {
-  background: #0066cc;
-  color: #fff;
-  border-color: #0066cc;
-}
-
 .product-list .pagination button:disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+
+.product-list .pagination button:hover:not(:disabled) {
+  background: #06c;
+  color: #fff;
+  border-color: #06c;
 }
 
 .product-list .pagination span {
